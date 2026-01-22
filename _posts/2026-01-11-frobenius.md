@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[공업수학1] 확장된 거듭제곱수 해법-frobenius해법 예제 및 풀이"
-
+categories: 공업수학1
 ---
 
 # 5.2 확장된 거듭제곱수 해법-frobenius해법 예제 및 풀이
