@@ -8,12 +8,14 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* 모든 스타일을 무시하고 강제 적용 */
+/* 모든 페이지와 포스트의 이미지 크기를 강제로 조절 */
+.initial-content img,
+article img,
 .page__content img {
   display: block !important;
-  margin: 30px auto !important; /* 위아래 간격 주고 가운데 정렬 */
-  max-width: 75% !important;   /* 80%보다 조금 더 줄여서 가독성 확보 */
+  margin: 30px auto !important;
+  max-width: 75% !important; /* 80%보다 조금 더 줄여서 가독성을 높였습니다 */
   height: auto !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
