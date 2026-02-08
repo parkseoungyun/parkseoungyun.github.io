@@ -7,13 +7,18 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-/* 본문 내 이미지 크기 자동 조절 */
-.post-content img, 
-.page__content img { /* 테마에 따라 클래스명이 다를 수 있음 */
+
+/* Minimal Mistakes 전용 이미지 크기 조절 */
+.page__content {
+  img {
     display: block;
-    max-width: 80%;      /* 본문 너비의 80%만 차지 (원하는 대로 조절) */
-    height: auto;        /* 가로세로 비율 유지 */
-    margin: 30px auto;   /* 위아래 간격 30px, 좌우 가운데 정렬 */
-    border-radius: 5px;  /* 이미지 모서리 살짝 둥글게 */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 미세한 그림자 효과 */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%; /* 본문 너비의 80%로 제한 */
+    height: auto;
+    border-radius: 4px; /* 선택 사항: 모서리 둥글게 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 선택 사항: 그림자 */
+  }
+
+  /* 만약 특정 이미지만 100%로 보고 싶다면 마크다운에서 별도 처리 가능 */
 }
