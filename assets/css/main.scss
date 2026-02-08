@@ -7,13 +7,15 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-/* 본문 내 이미지 크기 자동 조절 */
-.post-content img, 
-.page__content img { /* 테마에 따라 클래스명이 다를 수 있음 */
-    display: block;
-    max-width: 80%;      /* 본문 너비의 80%만 차지 (원하는 대로 조절) */
-    height: auto;        /* 가로세로 비율 유지 */
-    margin: 30px auto;   /* 위아래 간격 30px, 좌우 가운데 정렬 */
-    border-radius: 5px;  /* 이미지 모서리 살짝 둥글게 */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 미세한 그림자 효과 */
+
+/* 모든 페이지와 포스트의 이미지 크기를 강제로 조절 */
+.initial-content img,
+article img,
+.page__content img {
+  display: block !important;
+  margin: 30px auto !important;
+  max-width: 75% !important; /* 80%보다 조금 더 줄여서 가독성을 높였습니다 */
+  height: auto !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
