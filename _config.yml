@@ -115,8 +115,8 @@ analytics:
 author:
   name             : "chunsik"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "engineering"
-  location         : "korea"
+  bio              : "Chemical Engineering Study Archive"
+  location         : "South Korea"
   email            :  
   links:
     - label: "Email"
