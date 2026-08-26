@@ -19,3 +19,8 @@ article img,
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+/* 한글 단어 단위 줄바꿈 및 긴 단어 오버플로우 방지 */
+.page__content {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
